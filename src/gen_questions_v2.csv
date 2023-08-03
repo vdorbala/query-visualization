@@ -1,0 +1,152 @@
+Question,Object-States,Relationships,GPT Answer
+Is the kitchen clean?,"{'stove': ['OFF', 'CLOSED'], 'kitchencounter': ['CLOSED'], 'garbagecan': ['CLOSED'], 'faucet': ['OFF']}","['dishbowl INSIDE kitchen', 'cutleryfork INSIDE kitchen', 'dishwashingliquid ON kitchencounter', 'garbagecan INSIDE bedroom']",NO
+Is the bathroom in use?,"{'faucet': ['ON'], 'toilet': ['OPEN']}","['toothbrush ON bathroomcounter', 'towel ON bathroomcounter']",NO
+Are we ready for a bath?,"{'faucet': ['OFF'], 'toilet': ['CLOSED']}","['barsoap ON bathroomcounter', 'towel ON bathroomcounter']",YES
+Are we out of coffee?,{'coffeemaker': ['OFF']},"['coffeebeanbag INSIDE cabinet', 'coffeepot INSIDE coffeemaker']",NO
+Is someone cooking?,"{'stove': ['ON', 'OPEN'], 'faucet': ['ON']}","['fryingpan ON stove', 'salmon INSIDE kitchen']",YES
+Is the TV room occupied?,"{'tv': ['ON'], 'lightswitch': ['ON']}","['remotecontrol ON tvstand', 'sofa FACING tv']",YES
+Is it bedtime?,"{'lightswitch': ['OFF'], 'tv': ['OFF'], 'computer': ['OFF']}","['bed INSIDE bedroom', 'door INSIDE bedroom']",NO
+Is someone working from home?,"{'computer': ['ON'], 'cellphone': ['ON']}","['desk INSIDE bedroom', 'chair INSIDE bedroom']",YES
+Are we eating breakfast?,"{'coffeemaker': ['ON'], 'toaster': ['ON']}","['breadslice INSIDE toaster', 'coffeebeanbag INSIDE kitchen']",NO
+Are we having a party?,"{'radio': ['ON'], 'lightswitch': ['ON']}","['wineglass ON coffeetable', 'sofa FACING tv']",YES
+Is the kitchen ready for cooking?,"{'stove': ['OFF', 'CLOSED'], 'fridge': ['CLOSED'], 'kitchencabinet': ['CLOSED'], 'kitchencounter': ['CLOSED']}","['stove INSIDE kitchen', 'fridge INSIDE kitchen', 'kitchencabinet INSIDE kitchen', 'kitchencounter INSIDE kitchen']",NO
+Is everyone in the house asleep?,"{'lightswitch': ['ON'], 'tv': ['OFF'], 'computer': ['OFF']}","['lightswitch INSIDE livingroom', 'tv INSIDE livingroom', 'computer INSIDE bedroom']",NO
+Is someone currently in the bathroom?,"{'faucet': ['OFF'], 'door': ['OPEN']}","['faucet INSIDE bathroom', 'door INSIDE bathroom']",NO
+Has someone been reading?,"{'book': ['CLOSED'], 'tablelamp': ['ON']}","['book INSIDE livingroom', 'tablelamp INSIDE bedroom']",YES
+Is the washing done?,"{'washingmachine': ['CLOSED', 'OFF']}",['washingmachine INSIDE bathroom'],YES
+Are we ready to have a meal in the living room?,"{'tv': ['ON'], 'remotecontrol': ['OFF'], 'coffeetable': ['CLOSED']}","['tv INSIDE livingroom', 'remotecontrol ON tvstand', 'coffeetable INSIDE livingroom']",NO
+Is it daytime?,"{'curtains': ['CLOSED'], 'candle': ['OFF']}","['curtains INSIDE livingroom', 'candle INSIDE livingroom']",NO
+Has the workday started?,"{'computer': ['OFF'], 'cellphone': ['OFF']}","['computer INSIDE bedroom', 'cellphone INSIDE bedroom']",NO
+Is there a power outage?,"{'lightswitch': ['ON'], 'microwave': ['OFF']}","['lightswitch INSIDE kitchen', 'microwave INSIDE kitchen']",YES
+Is someone ready to leave the house?,"{'door': ['OPEN'], 'cellphone': ['OFF']}","['door INSIDE livingroom', 'cellphone INSIDE livingroom']",YES
+Is someone in the living room?,"{'tv': ['OFF'], 'computer': ['OFF']}","['tv INSIDE livingroom', 'computer INSIDE livingroom']",NO
+Is someone studying?,"{'book': ['CLOSED'], 'cellphone': ['OFF'], 'computer': ['OFF']}","['book ON desk', 'cellphone ON desk', 'computer ON desk']",NO
+Has someone just finished watching TV?,"{'tv': ['OFF'], 'remotecontrol': ['OFF']}","['tv INSIDE livingroom', 'remotecontrol ON tvstand']",YES
+Is the bedroom ready for sleep?,"{'lightswitch': ['ON'], 'tablelamp': ['ON'], 'door': ['OPEN']}","['lightswitch INSIDE bedroom', 'tablelamp INSIDE bedroom', 'door INSIDE bedroom']",NO
+Are there fresh fruits in the kitchen?,{'fridge': ['CLOSED']},"['apple INSIDE fridge', 'bananas INSIDE fridge']",YES
+Has someone just had a meal in the kitchen?,"{'plate': ['CLOSED'], 'faucet': ['ON']}","['plate ON kitchencounter', 'faucet INSIDE kitchen']",YES
+Is someone working on the computer?,"{'computer': ['OFF'], 'cellphone': ['OFF']}","['computer INSIDE livingroom', 'cellphone ON coffeetable']",NO
+Is someone getting ready for bed?,"{'lightswitch': [['ON']], 'toilet': [['CLOSED']], 'toothpaste': [['OPEN']]}","['lightswitch INSIDE bedroom', 'toilet INSIDE bathroom', 'toothpaste INSIDE bathroom']",NO
+Is dinner being prepared in the kitchen?,"{'stove': [['ON']], 'microwave': [['ON']]}","['stove INSIDE kitchen', 'microwave INSIDE kitchen']",YES
+Is someone studying in the bedroom?,"{'lightswitch': [['ON']], 'computer': [['ON']]}","['lightswitch INSIDE bedroom', 'computer INSIDE bedroom']",NO
+Is someone watching TV in the living room?,"{'tv': [['ON']], 'lightswitch': [['ON']]}","['tv INSIDE livingroom', 'lightswitch INSIDE livingroom']",NO
+Is someone doing laundry?,{'washingmachine': [['ON']]},['washingmachine INSIDE bathroom'],NO
+Is it night time?,"{'lightswitch': [['ON']], 'window': [['CLOSED']]}","['lightswitch INSIDE livingroom', 'window INSIDE livingroom']",YES
+Is the house being cleaned?,"{'microwave': [['OFF']], 'stove': [['OFF']], 'faucet': [['OFF']]}","['microwave INSIDE kitchen', 'stove INSIDE kitchen', 'faucet INSIDE bathroom']",NO
+Is the living room ready for a movie night?,"{'tv': ['ON'], 'remotecontrol': ['ON'], 'lights': ['OFF'], 'sofa': ['OPEN']}","['remotecontrol ON tvstand', 'sofa INSIDE livingroom', 'tv INSIDE livingroom', 'lights INSIDE livingroom']",YES
+Is someone in the kitchen making coffee?,"{'coffeemaker': ['ON'], 'fridge': ['OPEN'], 'lights': ['ON']}","['fridge INSIDE kitchen', 'coffeemaker INSIDE kitchen', 'lights INSIDE kitchen']",YES
+Is the bathroom being used?,"{'faucet': ['ON'], 'lights': ['ON'], 'door': ['CLOSED']}","['faucet INSIDE bathroom', 'lights INSIDE bathroom', 'door INSIDE bathroom']",YES
+Is someone in the bedroom reading a book?,"{'lights': ['ON'], 'book': ['OPEN']}","['book INSIDE bedroom', 'lights INSIDE bedroom']",NO
+Did someone forget to turn off the computer in the bedroom?,"{'computer': ['ON'], 'lights': ['OFF'], 'door': ['CLOSED']}","['computer INSIDE bedroom', 'lights INSIDE bedroom', 'door INSIDE bedroom']",YES
+Is it bedtime in the house?,"{'lights': ['OFF'], 'door': ['CLOSED'], 'tv': ['OFF'], 'computer': ['OFF']}","['lights INSIDE livingroom', 'door INSIDE livingroom', 'tv INSIDE livingroom', 'computer INSIDE livingroom']",YES
+Are the windows in the house closed?,{'window': ['CLOSED']},"['window INSIDE bathroom', 'window INSIDE bedroom', 'window INSIDE livingroom']",YES
+Did someone leave the fridge open in the kitchen?,{'fridge': ['OPEN']},['fridge INSIDE kitchen'],NO
+Is someone studying in the living room?,"{'book': ['OPEN'], 'lights': ['ON'], 'computer': ['ON']}","['book INSIDE livingroom', 'lights INSIDE livingroom', 'computer INSIDE livingroom']",YES
+Is someone currently in the living room?,"{'tv': [['OFF']], 'coffeetable': [['CLOSED']]}","['tv INSIDE livingroom', 'coffee ON coffeetable']",NO
+Is it dinner time?,"{'microwave': [['ON']], 'stove': [['ON']]}","['microwave INSIDE kitchen', 'stove INSIDE kitchen']",NO
+Is someone taking a shower in the bathroom?,{'faucet': [['ON']]},['faucet INSIDE bathroom'],NO
+Has someone just finished studying?,"{'book': [['CLOSED']], 'computer': [['OFF']]}","['book ON desk', 'computer INSIDE bedroom']",YES
+Is someone about to go to bed?,"{'bed': [['OPEN']], 'lightswitch': [['OFF']]}","['bed INSIDE bedroom', 'lightswitch INSIDE bedroom']",YES
+Is someone cooking in the kitchen?,"{'stove': [['ON']], 'faucet': [['ON']]}","['stove INSIDE kitchen', 'faucet INSIDE kitchen']",NO
+Has the family just had a meal?,"{'dishbowl': [['CLOSED']], 'plate': [['CLOSED']]}","['dishbowl ON kitchentable', 'plate ON kitchentable']",YES
+Is the bedroom ready for someone to sleep?,"{'bed': [['OPEN']], 'tablelamp': [['OFF']]}","['bed INSIDE bedroom', 'tablelamp ON nightstand']",NO
+Is someone about to leave the house?,"{'door': [['OPEN']], 'cellphone': [['ON']]}","['door INSIDE livingroom', 'cellphone ON coffeetable']",YES
+Is the living room light switched off?,{'lightswitch': [['OFF']]},lightswitch INSIDE livingroom,NO
+Is the TV switched on in the living room?,{'tv': [['ON']]},tv INSIDE livingroom,NO
+Are the kitchen appliances switched off?,"{'coffeemaker': [['OFF']], 'toaster': [['OFF']], 'microwave': [['OFF', 'CLOSED']]}","coffeemaker INSIDE kitchen, toaster INSIDE kitchen, microwave INSIDE kitchen",YES
+Is the bathroom cabinet open?,{'bathroomcabinet': [['OPEN']]},bathroomcabinet INSIDE bathroom,NO
+Is the front door open?,{'door': [['OPEN']]},door INSIDE livingroom,YES
+Is the computer switched on in the bedroom?,{'computer': [['ON']]},computer INSIDE bedroom,NO
+Are the fruits inside the fridge?,"{'apple': [['CLOSED']], 'bananas': [['CLOSED']]}","apple INSIDE fridge, bananas INSIDE fridge",NO
+Is the washing machine running in the bathroom?,{'washingmachine': [['ON']]},washingmachine INSIDE bathroom,NO
+Is the faucet running in the kitchen?,{'faucet': [['ON']]},faucet INSIDE kitchen,NO
+Is the microwave door open in the kitchen?,{'microwave': [['OPEN']]},microwave INSIDE kitchen,NO
+Is the living room ready for movie time?,"{'tv': [['ON']], 'lights': [['OFF']], 'remotecontrol': [['ON']]}","['tv INSIDE livingroom', 'lights INSIDE livingroom', 'remotecontrol INSIDE livingroom']",NO
+Is the bathroom ready for a shower?,"{'faucet': [['ON']], 'lightswitch': [['ON']], 'bathroomcabinet': [['CLOSED']]}","['faucet INSIDE bathroom', 'lightswitch INSIDE bathroom', 'bathroomcabinet INSIDE bathroom']",NO
+Is the bedroom in a state of sleep?,"{'lightswitch': [['OFF']], 'door': [['CLOSED']], 'window': [['CLOSED']]}","['lightswitch INSIDE bedroom', 'door INSIDE bedroom', 'window INSIDE bedroom']",YES
+Has someone just finished reading a book in the living room?,"{'book': [['CLOSED']], 'lightswitch': [['ON']], 'tv': [['OFF']]}","['book INSIDE livingroom', 'lightswitch INSIDE livingroom', 'tv INSIDE livingroom']",YES
+Is someone about to have breakfast in the kitchen?,"{'coffeemaker': [['ON']], 'toaster': [['ON']], 'fridge': [['OPEN']]}","['coffeemaker INSIDE kitchen', 'toaster INSIDE kitchen', 'fridge INSIDE kitchen']",YES
+Is the living room ready for a party?,"{'lights': [['ON']], 'radio': [['ON']], 'window': [['OPEN']]}","['lights INSIDE livingroom', 'radio INSIDE livingroom', 'window INSIDE livingroom']",NO
+Is someone working late in the bedroom?,"{'computer': [['ON']], 'lightswitch': [['ON']], 'window': [['CLOSED']]}","['computer INSIDE bedroom', 'lightswitch INSIDE bedroom', 'window INSIDE bedroom']",YES
+Is the house ready for sleep?,"{'lightswitch': [['OFF']], 'tv': [['OFF']], 'door': [['CLOSED']], 'window': [['CLOSED']]}","['lightswitch INSIDE livingroom', 'tv INSIDE livingroom', 'door INSIDE livingroom', 'window INSIDE livingroom']",NO
+Has someone just left the house?,"{'door': [['OPEN']], 'tv': [['OFF']], 'lightswitch': [['OFF']]}","['door INSIDE livingroom', 'tv INSIDE livingroom', 'lightswitch INSIDE livingroom']",YES
+Can I watch TV now?,{'tv': [['ON']]},['tv INSIDE livingroom'],NO
+Is the book on the desk?,{},['book ON desk'],NO
+Is the coffee maker ready to use?,{'coffeemaker': [['ON']]},['coffeemaker INSIDE kitchen'],NO
+Did someone forget to off the stove?,{'stove': [['ON']]},['stove INSIDE kitchen'],NO
+Is the washing machine running?,{'washingmachine': [['ON']]},['washingmachine INSIDE bathroom'],NO
+Can I call someone from the wall phone?,{'wallphone': [['ON']]},['wallphone INSIDE kitchen'],NO
+Are the curtains in the living room closed?,{'curtains': [['CLOSED']]},['curtains INSIDE livingroom'],YES
+Are the lights in the bathroom on?,{'lightswitch': [['ON']]},['lightswitch INSIDE bathroom'],YES
+Is anyone cooking in the kitchen?,"{'stove': [['OFF', 'CLOSED']], 'microwave': [['CLOSED', 'OFF']]}","['stove INSIDE kitchen', 'microwave INSIDE kitchen']",NO
+Are we ready for a study session?,"{'computer': [['ON']], 'lightswitch': [['ON']]}","['computer INSIDE livingroom', 'lightswitch INSIDE livingroom']",YES
+Is the laundry done?,"{'washingmachine': [['OFF', 'CLOSED']]}",['washingmachine INSIDE bathroom'],YES
+Are we having a candlelight dinner?,"{'candle': [['ON']], 'lightswitch': [['OFF']]}","['candle INSIDE livingroom', 'lightswitch INSIDE livingroom']",YES
+Is someone working late night?,"{'computer': [['ON']], 'lightswitch': [['OFF']]}","['computer INSIDE bedroom', 'lightswitch INSIDE bedroom']",YES
+Are we out of food?,{'fridge': [['CLOSED']]},['apple INSIDE fridge'],NO
+Is the bedroom tidy?,{'clothespile': [['CLOSED']]},['clothespile INSIDE bedroom'],YES
+Is it a sunny day?,{'curtains': [['OPEN']]},['curtains INSIDE livingroom'],YES
+Is the house ready for sleeptime?,"{'lightswitch': ['OFF'], 'tv': ['OFF'], 'computer': ['OFF'], 'door': ['CLOSED']}","['door INSIDE livingroom', 'tv INSIDE livingroom', 'computer INSIDE bedroom']",YES
+Are the apples rotting?,{'apple': []},['apple INSIDE fridge'],NO
+Is someone in the kitchen?,"{'lightswitch': ['ON'], 'fridge': ['OPEN']}","['lightswitch INSIDE kitchen', 'fridge INSIDE kitchen']",YES
+Is someone preparing for bed?,"{'toothpaste': ['OPEN'], 'lightswitch': ['OFF']}","['toothpaste INSIDE bathroom', 'lightswitch INSIDE bedroom']",NO
+Is the house empty?,"{'lightswitch': ['OFF'], 'tv': ['OFF'], 'computer': ['OFF'], 'door': ['CLOSED']}","['lightswitch INSIDE livingroom', 'tv INSIDE livingroom', 'computer INSIDE bedroom', 'door INSIDE livingroom']",YES
+Has dinner been prepared?,{'stove': ['OFF']},['stove INSIDE kitchen'],NO
+Are the windows closed?,{'window': ['CLOSED']},"['window INSIDE livingroom', 'window INSIDE bedroom', 'window INSIDE bathroom']",YES
+Is the house ready for bedtime?,"{'lightswitch': ['ON'], 'tv': ['OFF'], 'computer': ['OFF'], 'door': ['CLOSED']}","['tv INSIDE livingroom', 'computer INSIDE livingroom', 'door INSIDE livingroom']",NO
+Is anyone reading a book?,"{'book': ['OPEN'], 'lightswitch': ['ON']}",['book INSIDE livingroom'],NO
+Is the bookshelf in the kitchen?,{},['bookshelf INSIDE kitchen'],YES
+Are the apples fresh?,{},['apple INSIDE fridge'],YES
+Is the TV on?,{'tv': ['ON']},['tv INSIDE livingroom'],NO
+Is it morning?,"{'lightswitch': ['OFF'], 'curtains': ['OPEN']}","['lightswitch INSIDE bedroom', 'curtains INSIDE bedroom']",YES
+Is someone watching TV in the livingroom?,"{'tv': [['ON']], 'sofa': [['OPEN']]}","['tv INSIDE livingroom', 'sofa INSIDE livingroom']",NO
+Is the kitchen being cleaned?,"{'dishwashingliquid': [['ON']], 'faucet': [['ON']]}","['faucet INSIDE kitchen', 'dishwashingliquid INSIDE kitchen']",NO
+Is the bedroom ready for bedtime?,"{'lightswitch': [['OFF']], 'bed': [['OPEN']]}","['lightswitch INSIDE bedroom', 'bed INSIDE bedroom']",YES
+Are there any leftovers?,"{'fridge': [['CLOSED']], 'microwave': [['OFF', 'CLOSED']]}","['fridge INSIDE kitchen', 'microwave INSIDE kitchen']",YES
+Is the living room tidy?,"{'garbagecan': [['CLOSED']], 'remotecontrol': [['OFF']]}","['garbagecan INSIDE livingroom', 'remotecontrol INSIDE livingroom']",NO
+Is it morning time?,"{'curtains': [['OPEN']], 'coffeemaker': [['ON']]}","['curtains INSIDE bedroom', 'coffeemaker INSIDE kitchen']",NO
+Are we ready to eat dinner?,"{'microwave': [['OFF', 'CLOSED']], 'stove': [['OFF', 'CLOSED']], 'tablelamp': [['ON']]}","['microwave INSIDE kitchen', 'stove INSIDE kitchen', 'tablelamp ON kitchentable']",NO
+Is the bedroom clean?,"{'closet': [['CLOSED']], 'clothespile': [['CLOSED']], 'nightstand': [['CLOSED']]}","['closet INSIDE bedroom', 'clothespile INSIDE bedroom', 'nightstand INSIDE bedroom']",YES
+Is someone in the house?,"{'door': [['OPEN']], 'lightswitch': [['ON']], 'tv': [['OFF']]}","['door INSIDE livingroom', 'lightswitch INSIDE livingroom', 'tv INSIDE livingroom']",NO
+Is someone reading a book?,"{'book': [['CLOSED']], 'lightswitch': [['ON']]}","['book ON bookshelf', 'lightswitch INSIDE livingroom']",NO
+Is the bathroom not ready for use?,"{'toilet': ['CLOSED'], 'faucet': ['OFF'], 'toothpaste': ['CLOSED']}","['toilet INSIDE bathroom', 'faucet INSIDE bathroom', 'toothpaste INSIDE bathroom']",YES
+Has someone just left the kitchen?,"{'faucet': ['OFF'], 'stove': ['OFF'], 'microwave': ['OFF']}","['faucet INSIDE kitchen', 'stove INSIDE kitchen', 'microwave INSIDE kitchen']",YES
+Is someone about to start their day?,"{'lightswitch': ['ON'], 'toothpaste': ['CLOSED'], 'coffeemaker': ['OFF']}","['lightswitch INSIDE bedroom', 'toothpaste INSIDE bathroom', 'coffeemaker INSIDE kitchen']",NO
+Is the bedroom messy?,"{'closet': ['CLOSED'], 'nightstand': ['CLOSED'], 'clothespile': ['CLOSED']}","['closet INSIDE bedroom', 'nightstand INSIDE bedroom', 'clothespile INSIDE bedroom']",YES
+Has someone just finished working at the desk?,"{'computer': ['OFF'], 'desk': ['CLOSED'], 'cellphone': ['OFF']}","['computer INSIDE livingroom', 'desk INSIDE livingroom', 'cellphone INSIDE livingroom']",YES
+Is someone about to have a bath?,"{'faucet': ['OFF'], 'candle': ['ON'], 'bathroomcabinet': ['CLOSED']}","['faucet INSIDE bathroom', 'candle INSIDE bathroom', 'bathroomcabinet INSIDE bathroom']",NO
+Is the living room ready for a cozy evening?,"{'candle': ['ON'], 'lightswitch': ['OFF'], 'tv': ['ON']}","['candle INSIDE livingroom', 'lightswitch INSIDE livingroom', 'tv INSIDE livingroom']",NO
+Are we out of apples?,{'fridge': ['CLOSED']},['apple INSIDE fridge'],YES
+Is someone in the middle of a household chore?,{'washingmachine': ['ON']},['washingmachine INSIDE bathroom'],YES
+Is breakfast being prepared?,"{'toaster': ['ON'], 'coffeemaker': ['ON']}","['toaster INSIDE kitchen', 'coffeemaker INSIDE kitchen']",NO
+Is it a sunny day outside?,{'curtains': ['OPEN']},['window INSIDE livingroom'],YES
+Did someone forget to turn off the computer?,{'computer': ['ON']},['computer INSIDE bedroom'],YES
+Is the living room entertainment system ready?,"{'tv': [['ON']], 'remotecontrol': [['OFF']], 'radio': [['ON']]}","['tv INSIDE livingroom', 'remotecontrol INSIDE livingroom', 'radio INSIDE livingroom']",NO
+Is there a power outage in the kitchen?,"{'microwave': [['OFF']], 'coffeemaker': [['OFF']], 'stove': [['OFF']]}","['microwave INSIDE kitchen', 'coffeemaker INSIDE kitchen', 'stove INSIDE kitchen']",YES
+Is someone working in the bedroom?,"{'computer': [['ON']], 'lightswitch': [['ON']], 'cellphone': [['ON']]}","['computer INSIDE bedroom', 'lightswitch INSIDE bedroom', 'cellphone INSIDE bedroom']",NO
+Is the closet in the bedroom open?,{'closet': [['OPEN']]},['closet INSIDE bedroom'],NO
+Is breakfast being prepared in the kitchen?,"{'coffeemaker': [['ON']], 'toaster': [['ON']]}","['coffeemaker INSIDE kitchen', 'toaster INSIDE kitchen']",YES
+Are we going to have a candlelit dinner in the living room?,"{'candle': [['ON']], 'lightswitch': [['OFF']]}","['candle INSIDE livingroom', 'lightswitch INSIDE livingroom']",YES
+Is the food being cooked in the kitchen?,"{'stove': [['ON']], 'microwave': [['ON']]}","['stove INSIDE kitchen', 'microwave INSIDE kitchen']",NO
+Is the stove in the kitchen turned off?,{'stove': [['OFF']]},stove INSIDE kitchen,YES
+Is the bathroom ready for use?,"{'faucet': [['OFF']], 'toilet': [['CLOSED']], 'bathroomcabinet': [['CLOSED']]}",faucet INSIDE bathroom,YES
+Is the main door open?,{'door': [['OPEN']]},door INSIDE kitchen,NO
+Is the TV turned on in the living room?,{'tv': [['ON']]},tv INSIDE livingroom,NO
+Are the curtains in the bedroom closed?,{'curtains': [['CLOSED']]},curtains INSIDE bedroom,YES
+Is the computer in the living room turned off?,{'computer': [['OFF']]},computer INSIDE livingroom,YES
+Is there a book on the bookshelf?,{},book ON bookshelf,YES
+Is there an apple on the coffee table in the living room?,{},apple ON coffeetable,YES
+Is the coffee maker in the kitchen turned on?,{'coffeemaker': [['ON']]},coffeemaker INSIDE kitchen,NO
+Is the washing machine in the bathroom both closed and turned off?,"{'washingmachine': [['CLOSED', 'OFF']]}",washingmachine INSIDE bathroom,YES
+Is someone currently in the kitchen?,"{'lightswitch': [['ON']], 'tv': [['OFF']]}","['tv INSIDE kitchen', 'lightswitch INSIDE kitchen']",YES
+Is it nighttime?,"{'lightswitch': [['ON']], 'curtains': [['CLOSED']]}","['lightswitch INSIDE livingroom', 'curtains INSIDE bedroom']",YES
+Are we ready to go out?,"{'faucet': [['OFF']], 'door': [['OPEN']], 'lightswitch': [['OFF']]}","['faucet INSIDE bathroom', 'door INSIDE kitchen', 'lightswitch INSIDE bedroom']",NO
+Did someone forget their cellphone?,{'cellphone': [['OFF']]},['cellphone ON coffeetable'],YES
+Is the living room unoccupied?,"{'tv': [['OFF']], 'lightswitch': [['OFF']]}","['tv INSIDE livingroom', 'lightswitch INSIDE livingroom']",YES
+Has someone just finished washing clothes?,"{'washingmachine': [['CLOSED', 'OFF']]}",['washingmachine INSIDE bathroom'],YES
+Are we ready to start a study session?,"{'computer': [['OFF']], 'lightswitch': [['ON']]}","['computer INSIDE livingroom', 'lightswitch INSIDE livingroom']",NO
+Is the living room ready for a movie?,"{'tv': [['ON']], 'lights': [['OFF']], 'curtains': [['CLOSED']]}","['tv INSIDE livingroom', 'lights INSIDE livingroom', 'curtains INSIDE livingroom']",NO
+Has the dinner been served?,"{'stove': [['OFF']], 'plate': [['ON']]}","['plate ON kitchentable', 'stove INSIDE kitchen']",NO
+Has anyone just taken a bath?,"{'faucet': [['OFF']], 'towel': [['ON']]}","['faucet INSIDE bathroom', 'towel INSIDE bathroom']",NO
+Is anyone ready to go out?,"{'door': [['OPEN']], 'clothespants': [['ON']]}","['door INSIDE livingroom', 'clothespants ON clothespile']",YES
+Is the study time over in the bedroom?,"{'desk': [['CLOSED']], 'computer': [['OFF']]}","['desk INSIDE bedroom', 'computer ON desk']",YES
